@@ -1,0 +1,65 @@
+.app-content {
+  position: relative;
+}
+
+/* Icon Button styling */
+.icon-button {
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.icon-button img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.icon-button:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+/* ===== Responsive styles ===== */
+
+/* Tablet / medium screens */
+@media (max-width: 1024px) {
+  .icon-button {
+    width: 70px;
+    height: 70px;
+    bottom: 60px;
+    right: 16px;
+  }
+  .icon-button img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .icon-button {
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 12px;
+  }
+  .icon-button img {
+    width: 70px;
+    height: 70px;
+  }
+}

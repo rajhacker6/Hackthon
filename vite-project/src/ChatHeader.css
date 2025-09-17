@@ -1,0 +1,71 @@
+/* ChatHeader container */
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background-color: #f1f2f4; /* light gray background */
+  border-bottom: 1px solid #e5e7eb;
+  position: relative;
+  z-index: 10;
+}
+
+/* Left side: Avatar + Info */
+.chat-header-content {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between avatar and text */
+}
+
+/* Avatar circle */
+.chat-header-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #454748; /* light blue for bot */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Chat title and subtitle */
+.chat-header-info h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+}
+
+.chat-header-info p {
+  margin: 0;
+  font-size: 12px;
+  color: #fff; /* gray text */
+}
+
+/* Right side: buttons */
+.chat-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Button styling */
+.chat-header-actions .header-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.chat-header-actions .header-btn:hover {
+  background-color: #e5e7eb; /* subtle hover effect */
+}
+
+/* Ensure icons inside buttons are centered */
+.chat-header-actions .header-btn svg {
+  display: block;
+}
